@@ -9,8 +9,8 @@ ls -lah
 echo "pwd"
 pwd
 env
-echo "echo $INPUT_CITY"
-echo -e "\n$INPUT_CITY" >> log.txt
+echo "echo $CITY"
+echo -e "\n$CITY" >> log.txt
 
 echo "ls -lah /github/workspace"
 ls -lah /github/workspace
