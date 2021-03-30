@@ -4,4 +4,5 @@ runs:
     using: 'docker'
     image: 'Dockerfile'
     env:
-      CITY: ${{ inputs.city }}
+      #CITY: ${{ inputs.city }}
+      CITY: test
