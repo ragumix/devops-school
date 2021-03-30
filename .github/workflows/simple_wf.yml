@@ -20,14 +20,8 @@ jobs:
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2
-          with:
-            city: ${{ github.event.inputs.city }}
-#        - name: 1.3 ADD INPUT VARIABLE TO ARTIFACT
-#          run: |
-#            pwd
-#            ls -la
-#            chmod +x log.txt
-#            echo "My city is: ${{ github.event.inputs.city }}" >> log.txt
+          args:
+            - ${{ github.event.inputs.city }}
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
           with:
