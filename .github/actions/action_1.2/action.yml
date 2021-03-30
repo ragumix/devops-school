@@ -3,6 +3,3 @@ name: 'Test'
 runs:
     using: 'docker'
     image: 'Dockerfile'
-#    args:
-#      - ${{ inputs.city }}
-#      #CITY: test
