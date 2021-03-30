@@ -3,5 +3,5 @@ name: 'Test'
 runs:
     using: 'docker'
     image: 'Dockerfile'
-    args:
-      - ${{ inputs.city }}
+    env:
+      city: ${{ inputs.city }}
