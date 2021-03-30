@@ -3,3 +3,5 @@ name: 'Test'
 runs:
     using: 'docker'
     image: 'Dockerfile'
+      args:
+        - ${{ github.event.inputs.city }}
