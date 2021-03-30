@@ -4,9 +4,9 @@ on:
     workflow_dispatch:
         inputs:
             city:
-                description: "Current city"
+                description: 'Current city'
                 required: yes
-                default: "Moscow"
+                default: 'Moscow'
 
 jobs:
 
