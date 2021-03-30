@@ -8,7 +8,7 @@ ls -lah
 
 echo "pwd"
 pwd
-
+env
 echo "echo $INPUT_CITY"
 echo -e "\n$INPUT_CITY" >> log.txt
 
